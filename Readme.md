@@ -1,6 +1,6 @@
 # Informative Path Planning over MNIST Digits
 
-This project implements navigation strategies for autonomous exploration of MNIST digit environments, combining classical robotics approaches with deep learning. The system demonstrates advanced exploration techniques using information theory and neural networks to efficiently navigate partially observable environments.
+This project implements navigation strategies for autonomous exploration of MNIST digit environments with dynamic goals, combining classical robotics approaches with deep learning. The system demonstrates advanced exploration techniques using information theory and neural networks to efficiently navigate partially observable environments.
 
 <div align="center">
 <table>
@@ -11,7 +11,7 @@ This project implements navigation strategies for autonomous exploration of MNIS
 </td>
 <td align="center" width="50%">
     <img src="assets/entropy_trajectories.gif" alt="Entropy-based exploration visualization" width="50%"/><br>
-    <b>Entropy-Based Navigation Strategy</b>
+    <b>Information-Theoretic Navigation Strategy</b>
 </td>
 </tr>
 </table>
