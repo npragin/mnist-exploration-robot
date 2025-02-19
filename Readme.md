@@ -6,11 +6,11 @@ This project implements navigation strategies for autonomous exploration of MNIS
 <table>
 <tr>
 <td align="center" width="50%">
-    <img src="assets/example_traj_greedy.gif" alt="Greedy exploration visualization" width="50%"/><br>
+    <img src="assets/greedy_trajectories.gif" alt="Greedy exploration visualization" width="50%"/><br>
     <b>Greedy Navigation Strategy</b>
 </td>
 <td align="center" width="50%">
-    <img src="assets/example_traj_entropy.gif" alt="Entropy-based exploration visualization" width="50%"/><br>
+    <img src="assets/entropy_trajectories.gif" alt="Entropy-based exploration visualization" width="50%"/><br>
     <b>Entropy-Based Navigation Strategy</b>
 </td>
 </tr>
