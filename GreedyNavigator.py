@@ -109,9 +109,6 @@ class GreedyNavigator:
                 max_information_gain_neighbor = max([(self._get_num_unseen_neighbors(n, map), n) for n in neighbors],
                                                 key=lambda x: x[0])[1]
 
-                # unvisited_points = np.argwhere(~self._visited_areas)
-                # y, x = unvisited_points[np.argmin(np.linalg.norm((unvisited_points - (robot_loc[1], robot_loc[0])), ord=1, axis=1))]
-
                 dx = max_information_gain_neighbor[0] - robot_loc[0]
                 dy = max_information_gain_neighbor[1] - robot_loc[1]
             else:
