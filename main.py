@@ -1,25 +1,18 @@
 __author__ = 'Caleytown'
 
-import numpy as np
-from PIL import Image
 from RobotClass import Robot
 from GameClass import Game
 from RandomNavigator import RandomNavigator
-from networkFolder.functionList import Map, WorldEstimatingNetwork, DigitClassificationNetwork
+from networkFolder.functionList import Map
 from GreedyNavigator import GreedyNavigator
 from EntropyNavigator import EntropyNavigator
 import time
-
-import matplotlib.pyplot as plt
-from matplotlib.animation import ArtistAnimation
 
 
 # Create a Map Class Object
 map = Map()
 
 # Create a Robot that starts at (0,0)
-# The Robot Class stores the current position of the robot
-# and provides ways to move the robot 
 robot = Robot(0, 0)
 
 # Initialize the navigator
@@ -51,8 +44,6 @@ for m in range(0, num_trials):
     print(f"Final Score: {game.score}")
     s += game.score
     t += game.getIteration()
-
-    im = Image.fromarray(np.uint8(game.exploredMap)).show()
 
 timer = time.time() - timer
 print(f"Average score: {s/num_trials}")
