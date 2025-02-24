@@ -18,7 +18,7 @@ This project implements navigation strategies for autonomous exploration of MNIS
 </div>
 
 ## Project Overview
-**The core goal is for a robot to efficiently navigate to the correct grid corner by identifying a hidden MNIST digit.**
+**The core goal is for a robot to navigate to the correct grid corner by exploring and identifying a hidden MNIST digit while maximizing its score.**
 ### Environment
 - **Grid World**: 28x28 binary grid representing an MNIST handwritten digit
 - **Partial Observability**: Robot can only observe its 8-connected neighborhood
@@ -68,9 +68,9 @@ Key features:
 
 ### 2. Greedy Navigator
 A computationally efficient, myopic exploration strategy:
-- Moves to the brightest unvisited point in the map
-  - Tie breaker: Moves to the neighboring cell with the most unseen neighbors
-- When the digit is fully revealed or classification confidence exceeds 90%, navigates to the goal corresponding to the predicted digit
+- Moves to the brightest unvisited point on the map
+  - Tiebreaker: Moves to the neighboring cell with the most unseen neighbors
+- When the digit is fully revealed, or classification confidence exceeds 90%, navigates to the goal corresponding to the predicted digit
 
 ## Performance Analysis
 
