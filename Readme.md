@@ -18,7 +18,7 @@ This project implements navigation strategies for autonomous exploration of MNIS
 </div>
 
 ## Project Overview
-**The core goal is for a robot to navigate to the correct grid corner by exploring and identifying a hidden MNIST digit while maximizing its score.**
+**The core goal is for a robot to navigate to the correct grid corner by exploring and identifying a hidden handwritten digit while maximizing its score.**
 ### Environment
 - **Grid World**: 28x28 binary grid representing an MNIST handwritten digit
 - **Partial Observability**: Robot can only observe its 8-connected neighborhood
